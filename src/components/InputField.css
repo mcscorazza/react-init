@@ -1,0 +1,29 @@
+.input-field {
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.input-field input {
+    outline: none;
+    border: 1px solid #ddd;
+    line-height: 2em;
+    padding: 0 10px;
+}
+
+.input-field label {
+    position: absolute;
+    font-size: 0.8em;
+    top: 5px;
+    left: 10px;
+    z-index: 999;
+    background: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.input-field input:focus+label,
+.input-field input:valid+label {
+    transform: translateX(-5px) translateY(-18px);
+    font-size: 0.8em;
+
+}

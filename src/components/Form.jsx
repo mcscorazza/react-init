@@ -1,22 +1,12 @@
 import React from 'react'
+import InputField from './InputField'
+
 
 export default function Form() {
   return (
     <div>
         <form>
-            <div className="input-fields">
-                <label htmlFor="nome">Nome</label>
-                <input type="text" id='nome' />
-            </div>
-            <div className="input-fields">
-                <input type="text" />
-            </div>
-            <div className="input-fields">
-                <input type="text" />
-            </div>
-            <div className="input-fields">
-                <input type="text" />
-            </div>
+            <InputField idField="nome" nameField="Nome" typeField="text" />
             <button>Enviar</button>
         </form>
     </div>
