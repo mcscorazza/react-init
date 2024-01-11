@@ -1,0 +1,26 @@
+.form-frame {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 2px #12345633;
+}
+
+.form-frame form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-title {
+    border-radius: 10px 10px 0 0;
+    color: #ddd;
+    background: #123456;
+    width: 100%;
+    line-height: 2em;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 1px 1px #ffffff33;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
