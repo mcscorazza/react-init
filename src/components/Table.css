@@ -1,0 +1,41 @@
+.tableProd {
+    line-height: 1.8em;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+.tableProd tbody tr {
+    cursor: pointer;
+}
+
+
+.tableProd .tc {
+    text-align: center;
+}
+
+.tableProd .tr {
+    text-align: right;
+}
+
+.tableProd .desc {
+    width: 450px;
+}
+
+.tableProd .forn {
+    width: 200px;
+}
+
+
+.tableProd tr th {
+    border-bottom: 2px solid #ddd;
+    padding: 1px 20px 1px 10px;
+}
+
+.tableProd tr td {
+    border-bottom: 1px dotted #ddd;
+    padding: 1px 20px 1px 10px;
+}
+
+.tableProd tbody tr:hover td {
+    background: #f0f0f0;
+}
