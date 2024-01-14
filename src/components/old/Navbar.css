@@ -15,7 +15,6 @@
 .navbar ul li {
     padding: 5px 12px;
     cursor: pointer;
-    display: block;
     overflow: hidden;
     display: flex;
     align-items: center;

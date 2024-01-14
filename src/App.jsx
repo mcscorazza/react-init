@@ -1,14 +1,14 @@
-import './App.css'
-import Main from './components/Main'
-import Navbar from './components/Navbar'
+import React from 'react';
+import Layout from './components/Layout/Layout';
+import Home from './pages/Home';
 
-function App() {
+const App = () => {
   return (
-    <div className='page'>
-      <Navbar />
-      <Main />
-    </div>
-  )
-}
+    <Layout>
+      <Home />
+      {/* Outras páginas podem ser renderizadas aqui */}
+    </Layout>
+  );
+};
 
-export default App
+export default App;
