@@ -1,22 +1,37 @@
-import { useState } from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { HomeIcon, UserIcon, ChatBubbleLeftEllipsisIcon, ClipboardIcon, ArrowLongDownIcon } from '@heroicons/react/24/solid';
 
 const Sidebar = () => {
-    const [navbarOpen, setNavbarOpen] = useState(false);
-
   return (
-    <div className={`bg-gray-800 transition-all text-white ${navbarOpen ? 'w-64' : 'w-12'}`}>
-        <span className='w-12 h-12 cursor-pointer' onClick={() => setNavbarOpen((prev) => !prev)}> 
-            <img className='w-8 m-2' src="./imgs/menu.svg" alt="" />
-        </span>
-        <ul className='w-full mt-4'>
-            <li className='pl-4 flex py-4 my-1 hover:bg-slate-500 hover:pl-5 transition-all cursor-pointer'><img className='w-5' src="./imgs/home.svg" alt="" /><span className='pl-10'>HOME</span></li>
-            <li className='pl-4 flex py-4 my-1 hover:bg-slate-500 hover:pl-5 transition-all cursor-pointer'><img className='w-5' src="./imgs/mail.svg" alt="" /><span className='pl-10'>EMAIL</span></li>
-            <li className='pl-4 flex py-4 my-1 hover:bg-slate-500 hover:pl-5 transition-all cursor-pointer'><img className='w-5' src="./imgs/client.svg" alt="" /><span className='pl-10'>CLIENT</span></li>
-            <li className='pl-4 flex py-4 my-1 hover:bg-slate-500 hover:pl-5 transition-all cursor-pointer'><img className='w-5' src="./imgs/gps.svg" alt="" /><span className='pl-10'>GPS</span></li>
-            <li className='pl-4 flex py-4 my-1 hover:bg-slate-500 hover:pl-5 transition-all cursor-pointer'><img className='w-5' src="./imgs/product.svg" alt="" /><span className='pl-10'>PRODUCT</span></li>
-        </ul>
+    <div className="bg-gray-800 text-white w-64 p-4">
+      <div className="mb-8">
+        <div to="/" className="flex items-center text-xl font-bold mb-4">
+          <HomeIcon className="w-6 h-6 mr-2" />
+          Home
+        </div>
+        <div to="/clientes" className="flex items-center text-xl mb-4">
+          <UserIcon className="w-6 h-6 mr-2" />
+          Clientes
+        </div>
+        <div to="/pedidos" className="flex items-center text-xl mb-4">
+          <ClipboardIcon className="w-6 h-6 mr-2" />
+          Pedidos
+        </div>
+        <div to="/contato" className="flex items-center text-xl mb-4">
+          <ChatBubbleLeftEllipsisIcon className="w-6 h-6 mr-2" />
+          Contato
+        </div>
+      </div>
+      <div>
+        <div className="flex items-center text-xl">
+          <ArrowLongDownIcon className="w-6 h-6 mr-2" />
+          Sair
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Sidebar;
+
